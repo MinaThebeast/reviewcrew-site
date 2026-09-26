@@ -1,4 +1,7 @@
 {
+  "buildCommand": "node assemble.mjs",
+  "outputDirectory": "public",
+  "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
