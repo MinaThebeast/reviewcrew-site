@@ -41,6 +41,18 @@
   </script>
 </head>
 <body>
+  <!-- Checkout success banner -->
+  <div class="checkout-banner" data-checkout-banner hidden>
+    <div class="checkout-banner__inner">
+      <span class="checkout-banner__ico"><svg><use href="#i-check" /></svg></span>
+      <div class="checkout-banner__content">
+        <h2>Payment received — welcome to ReviewCrew!</h2>
+        <p>Watch your inbox for a welcome email within 1 business day. We'll guide you through the brand-voice intake and Google Business Profile access steps to get your desk up and running.</p>
+      </div>
+      <button class="checkout-banner__close" aria-label="Close" data-checkout-close>×</button>
+    </div>
+  </div>
+
   <!-- Shared SVG symbols -->
   <svg class="sprite" aria-hidden="true" focusable="false">
     <defs>
@@ -425,7 +437,8 @@
               <li><svg class="ico"><use href="#i-check" /></svg> Monthly Review Gap scorecard</li>
               <li><svg class="ico"><use href="#i-check" /></svg> Owner approval workflow</li>
             </ul>
-            <a href="#audit" class="btn btn--outline btn--block" data-plan="Desk Lite">Start with a free audit</a>
+            <a href="https://buy.stripe.com/cNibJ0fx163AbAmdzj" class="btn btn--outline btn--block">Get Desk Lite</a>
+            <p class="plan__calc">$197/mo + $297 setup = <b>$494 due today</b></p>
           </article>
           <article class="plan plan--pro" data-card>
             <span class="plan__badge">Most shops start here</span>
@@ -440,7 +453,8 @@
               <li><svg class="ico"><use href="#i-check" /></svg> Competitor watch on your scorecard</li>
               <li><svg class="ico"><use href="#i-check" /></svg> Multi-location / multi-crew + VIP channel</li>
             </ul>
-            <a href="#audit" class="btn btn--gold btn--block" data-plan="Desk Pro">Start with a free audit</a>
+            <a href="https://buy.stripe.com/14A9ASgB51Nk0VIan7" class="btn btn--gold btn--block">Get Desk Pro</a>
+            <p class="plan__calc">$347/mo + $297 setup = <b>$644 due today</b></p>
           </article>
         </div>
         <p class="plans__note">One-time setup: $297 (profile intake, competitor baseline, reply style guide, request templates). Waived on annual prepaid Desk Pro.</p>

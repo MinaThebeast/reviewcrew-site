@@ -7,6 +7,7 @@
   const money = (n) => Math.round(n).toLocaleString("en-US");
   let lenis = null;
 
+  initCheckoutBanner();
   initNav();
   initForm();
 
@@ -36,6 +37,27 @@
 
   // Recalculate positions once fonts settle (heading heights change).
   document.fonts?.ready.then(() => ScrollTrigger.refresh());
+
+  /* ---------------- Checkout Banner ---------------- */
+  function initCheckoutBanner() {
+    const params = new URLSearchParams(location.search);
+    if (!params.has("checkout") || params.get("checkout") !== "success") return;
+    
+    const banner = $("[data-checkout-banner]");
+    const close = $("[data-checkout-close]");
+    if (!banner) return;
+    
+    banner.hidden = false;
+    
+    close?.addEventListener("click", () => {
+      banner.style.animation = "slideUp .4s cubic-bezier(0.22, 1, 0.36, 1)";
+      setTimeout(() => banner.hidden = true, 400);
+    });
+    
+    const style = document.createElement("style");
+    style.textContent = "@keyframes slideUp { to { transform: translateY(-100%); opacity: 0; } }";
+    document.head.append(style);
+  }
 
   /* ---------------- Smooth scroll ---------------- */
   function initSmoothScroll() {
