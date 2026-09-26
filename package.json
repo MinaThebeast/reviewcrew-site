@@ -1,0 +1,1 @@
+{"name":"reviewcrew","private":true,"scripts":{"build":"node assemble.mjs"}}
