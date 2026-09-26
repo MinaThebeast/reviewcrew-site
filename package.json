@@ -1,1 +1,6 @@
-{"name":"reviewcrew","private":true,"scripts":{"build":"node assemble.mjs"}}
+{
+  "name": "reviewcrew",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" }
+}

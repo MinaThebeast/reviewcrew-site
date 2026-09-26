@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" fill="none" role="img" aria-label="ReviewCrew">
+  <defs>
+    <linearGradient id="rc-gold-l" x1="6" y1="2" x2="26" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD66B"/>
+      <stop offset=".55" stop-color="#FFB020"/>
+      <stop offset="1" stop-color="#F08A00"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0 4)">
+    <path fill="url(#rc-gold-l)" d="M16 2C9.4 2 4 7.2 4 13.6c0 8.4 10.2 15.6 11.1 16.2a1.6 1.6 0 0 0 1.8 0C17.8 29.2 28 22 28 13.6 28 7.2 22.6 2 16 2z"/>
+    <path fill="#0A0F1C" d="M16 6.8l1.65 4.33 4.63.23-3.62 2.91 1.22 4.47L16 16.2l-3.88 2.54 1.22-4.47-3.62-2.91 4.63-.23z"/>
+  </g>
+  <text x="40" y="28" font-family="'Bricolage Grotesque', 'Inter', system-ui, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.6" fill="#F5F3EE">Review<tspan fill="#FFB020">Crew</tspan></text>
+</svg>
